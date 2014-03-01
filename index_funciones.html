@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> JavaScript </title>	
+		
+		<script>
+			
+			/* prompt es para hacer preguntasy almacenar la informacion en una variable */  
+			var nombreUsuario = prompt("¿Como te llamas?");
+			document.write(nombreUsuario);
+			
+			
+			/* declaracion de funciones*/
+			function escribir (texto)
+			{
+				document.write(texto);
+			}
+			
+			escribir ( "<p>FERNANDA" + "</p>" );
+			
+			/*  funciones anonimas */
+			
+			var funcion_sumar;
+			var funcion_multiplicar;
+			var resultado = 0; 
+			
+			funcion_sumar = function (a, b)
+			{
+				resultado = a + b;
+				document.write("<p>suma" + resultado + "</p>");
+			};
+			
+			funcion_multiplicar = function (a, b)
+			{
+				resultado = a + b;
+				document.write("<p>multiplicacion" + resultado + "</p>");
+			};
+			
+		/* 	funcion_sumar(2, 3); */ 
+		/* 	funcion_multiplicar(2, 3); */ 
+			
+			/* una funcion que recibe como parametro otra funcion */
+			var operacion;
+			
+			operacion = function(unaFuncion)
+			{
+				unaFuncion(7,3);
+			} ;
+			
+			operacion(funcion_sumar); 
+			operacion(funcion_mutiplicar);
+			
+			
+			
+			
+			
+			
+		</script>	
+	</head>	
+	
+	<body>
+		<p> Aprendiendo JavaScript
+	</body>
+	
+</html>

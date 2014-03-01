@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title> JavaScript </title>	
+		
+		<script>
+	
+			 /* declarar objetos */
+			
+			var persona = new Object();
+			
+			persona.nombre = "Gerardo";
+			persona.apellido = "Falcon"; 
+			
+			
+			persona.hablar = function()
+			{
+				document.write("<p> Hola soy Gerardo Falcon </p>");		
+			}; 
+		
+			persona.hablar();   /* es una funcion y se declara asi */
+			document.write("<p>Nombre:" + "&nbsp" + persona.nombre + "&nbsp" + persona.apellido + "</p>"  );	
+			
+			
+			
+			/* declarar un objeto con notacion JSON*/
+			
+			var alumno =
+			{
+				nombre: "Fernanda", apellido: "Gonzalez",
+				hablar: function()
+				{
+					document.write("<p> YO SOY TU PADRE </p>");
+				}
+				
+			};
+			
+			alumno.hablar();
+			document.write("<p>Nombre:" + "&nbsp" + alumno.nombre + "&nbsp" + alumno.apellido + "</p>"  );
+			
+			
+			/*  Variante de JSON */
+			
+			var carro = {}; 
+			
+				carro.modelo = "2014";
+				carro.marca = "For";
+				carro.arrancar = function()
+				{
+					document.write("<p> run run run </p>");
+				};
+				
+				carro.arrancar();
+				document.write("<p>Modelo::" + "&nbsp" + carro.modelo + "&nbsp" + carro.marca + "</p>"  );
+				
+				 
+			
+			
+			
+		</script>
+		
+
+	</head>	
+	
+	<body>
+		
+		<p> Aprendiendo JavaScript
+		
+		
+	</body>
+	
+</html>
